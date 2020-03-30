@@ -1,0 +1,17 @@
+img {
+    width: 25%;
+}
+
+div {
+    background-color: #bdbaba;
+    opacity: 0.5;
+}
+
+body {
+    text-align: center;
+    background-image: url("https://wallpapercave.com/wp/wp3170170.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
