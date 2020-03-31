@@ -10,55 +10,57 @@
 </head>
 
 <body>
-    <div class = 'pokemon-header'>
-        <img src= https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png>
+    <div class = background>
+        <div class = layer>
+            <div class = 'pokemon-header'>
+                <img src= 'https://i.imgur.com/TOLNfpZ.png' alt = 'Pokemon heading'>
+            </div>
+            <div class = 'pokemon-content'>
+                <p>Chances are that if you've been alive anytime in the last 24 years, you've heard of Pokémon.
+                But even if you haven't, I'm here to give you a rundown.</p>
+            </div>
+            <div class = 'pokemon-history'>
+                <img src= 'https://i.imgur.com/4eSDbVF.png' alt = 'pokemon history subheading'>
+                <p>Pokémon (or Pocket Monsters) is a video game series created in 1996 by the company Game Freak, published by Nintendo.
+                Since it's inception, the Pokémon series has gone on to spawn over 120 games, along with several books, movies, comics, toys, and more.</p>  
+            </div>
+            <div class = 'pokemon-mechanics'>
+                <img src= 'https://i.imgur.com/qpToIdg.png' alt = 'how to play pokemon subheading'>
+                <p>A main series Pokémon game is a turn-based RPG (role-playing game), with the player going around and collecting Pokémon to battle with so they can become champion of the Pokémon League.
+                In essence, Pokémon battles are similar to rock-paper-scissors. Every Pokémon and Move has a type (or types), that they are strong and weak against. For example:</p>
+                <ul>
+                    <li>If the Fire-Type Pokemon Charmander is attacked with a water move, the move will be 'super effective!' and deal double damage. If it is hit with a grass move, the move will be 'not very effective!'</li>
+                    <li>If the Water-Type Pokemon Squirtle is attacked with a grass move, the move will be 'super effective!' and deal double damage. If it is hit with a fire move, the move will be 'not very effective!'</li> 
+                    <li>If the Grass-Type Pokemon Bulbasaur is attacked with a fire move, the move be 'super effective!' and deal double damage. If it is hit with a water move, the move will be 'not very effective!'</li>  
+                </ul>
+                <p>There are a total 18 Pokemon-types, each with their own strengths and weaknesses, and every Pokémon has different abilities, stats
+                and moves it can use, making every Pokémon battle a nail-biter!</p>  
+            </div>
+            <div class = 'pokemon-show'>
+                <img src= 'https://i.imgur.com/yNyrfZD.png' alt = 'pokemon tv show subheading'>
+                <p>Most people are familiar with Pokémon because of its largely popular TV show. It follows the adventure of Ash Ketchum and friends as he travels across
+                across the regions, battling Gym Leaders, and competing in the Pokémon League, while meeting new friends and Pokémon along the way.
+                The show lived in infamy because Ash, despite placing in every tournament, never won, until the most recent one. Here is a list of his tournament record.</p>
+                <ol>
+                    <li>Kanto: Top 16</li>
+                    <li>Johto: Top 8</li>
+                    <li>Hoenn: Top 8</li>
+                    <li>Sinnoh: Top 4</li>
+                    <li>Unova: Top 8</li>
+                    <li>Kalos: Runner-Up</li>
+                    <li>Alola: Champion</li>
+                </ol>
+            </div>    
+        </div>
+            <button id = 'quiz-button'>Start Quiz!</button>
+            <br>
+            <br>
+            <div class = 'finishedQuiz'>
+                <span id = 'quiz-score'></span>
+                <br>
+                <span id = 'quiz-result'></span>
+            </div>
     </div>
-    <div class = 'pokemon-content'>
-        <p>Chances are that if you've been alive anytime in the last 24 years, you've heard of Pokémon.
-        But even if you haven't, I'm here to give you a rundown.</p>
-        <div class = 'pokemon-history'>
-            <h2>History</h2>
-            <p>Pokémon (or Pocket Monsters) is a video game series created in 1996 by the company Game Freak, published by Nintendo.
-            Since it's inception, the Pokémon series has gone on to spawn over 120 games, along with several books, movies, comics, toys, and more.</p>
-            
-        </div>
-        <div class = 'pokemon-mechanics'>
-            <h2>How To Play</h2>
-            <p>A main series Pokémon game is a turn-based RPG, with the player going around and collecting Pokémon to battle with so they can become champion of the Pokémon League.
-            In essence, Pokémon battles are similar to rock-paper-scissors. Every Pokémon and Move has a type (or types), that they are strong and weak against. </p>
-            <p>For Example:</p>
-            <ul>
-                <li>If the Fire-Type Pokemon Charmander is attacked with a water move, the move will be 'super effective!' and deal double damage. If it is hit with a grass move, the move will be 'not very effective!'</li>
-                <li>If the Water-Type Pokemon Squirtle is attacked with a grass move, the move will be 'super effective!' and deal double damage. If it is hit with a fire move, the move will be 'not very effective!'</li> 
-                <li>If the Grass-Type Pokemon Bulbasaur is attacked with a fire move, the move be 'super effective!' and deal double damage. If it is hit with a water move, the move will be 'not very effective!'</li>  
-            </ul>
-            <p>There are a total 18 Pokemon-types, each with their own strengths and weaknesses, and every Pokémon has different abilities, stats
-            and moves it can use, making every Pokémon battle a much more strategic game then you'd think!</p>  
-        </div>
-        <div class = 'pokemon-show'>
-            <h2>The TV Show</h2>
-            <p>Most people are familiar with Pokémon because of its largely popular TV show. It follows the adventure of Ash Ketchum and friends as he travels across
-            across the regions, battling Gym Leaders, and competing in the Pokémon League, while meeting new friends and Pokémon along the way.
-            The show lived in infamy because Ash, despite placing in every tournament, never won, until the most recent one. Here is a list of his tournament record.</p>
-            <ol>
-                <li>Kanto: Top 16</li>
-                <li>Johto: Top 8</li>
-                <li>Hoenn: Top 8</li>
-                <li>Sinnoh: Top 4</li>
-                <li>Unova: Top 8</li>
-                <li>Kalos: Runner-Up</li>
-                <li>Alola: Champion</li>
-            </ol>
-        </div>    
-    </div>
-    <button id = 'quiz-button'>Start Quiz!</button>
-    <br>
-    <br>
-    <div class = 'finishedQuiz'>
-        <span id = 'quiz-score'></span>
-        <br>
-        <span id = 'quiz-result'></span>
-        </div>
     <script type="module" src="app.js"></script>
 </body>
 
