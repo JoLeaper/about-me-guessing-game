@@ -1,13 +1,12 @@
 function isYes(text) {
+    let input = String(text).toLowerCase();
     let answer = false;
-    let input = text.toLowerCase();
     if (input === 'yes') answer = true;
     if (input === 'y') answer = true;
     if (input === 'yas') answer = true;
-    if (answer === 'ye') answer = true;
+    if (input === 'ye') answer = true;
 
     return answer;
 }
-
 
 export default isYes;
