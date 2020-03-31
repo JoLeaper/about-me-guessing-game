@@ -2,11 +2,14 @@ import isYes from './isYes.js';
 
 const quizButton = document.getElementById('quiz-button');
 const quizResult = document.getElementById('quiz-result');
+const quizScore = document.getElementById('quiz-score');
 
 function launchQuiz() {
     let correctAnswers = 0;
+    let scorePercent = 0;
     let name = '';
     let response = '';
+    let scoreResponse = '';
 
     alert('Let\'s see if you have what it takes to be a Pokemon master!');
 
@@ -48,10 +51,19 @@ function launchQuiz() {
         case 3:
             response = `You have the makings of a Pokemon Master, ${name}!`;
             break;
-    } 
+    }
+    scorePercent = Math.floor((correctAnswers / 3) * 100);
+    scoreResponse = `You got ${correctAnswers} out of 3 right, that's a ${scorePercent} percent!`;
+    quizScore.textContent = scoreResponse;
     quizResult.textContent = response;
-    console.log(correctAnswers);
-
+    //you got correctAnswers / 3 right! That's Math.ceil(correctAnswers/3) percent!
+    if (correctAnswers >= 2) {
+        quizResult.style.color = 'green';
+        quizScore.style.color = 'green';
+    } else {
+        quizResult.style.color = 'red';
+        quizScore.style.color = 'red';
+    }
 }
 
 
